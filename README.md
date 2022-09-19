@@ -17,6 +17,49 @@ Open up the `src/index.html` file.  Click the "Go Live" button at the **bottom**
 ![Live Server](media/live-server.png)
 
 
+## Lesson
+
+### Typography
+
+* Font Family - `font-sans`, `font-serif`, `font-mono`
+* Font Size - `text-xs`, `text-sm`, `text-base`, `test-lg`, `text-xl`, `text-2xl`, etc.
+* Font Weight -  `font-thin`, `font-normal`, `font-semibold`, `font-bold`
+* Text Align - `text-left`, `text-center`, `text-right`
+* Text Color - `text-slate-500`
+
+### Layout and Sizing
+
+* Container - `container mx-auto`
+* Columns - `columns-2`, `columns-md`
+* Sizing 
+    * Width - `w-1`, `w-32`, `w-1/2`
+    * Height - `h-1`, `h-32`, `h-screen`, `h-full`
+
+#### Flex 
+
+
+
+
+#### Grid
+
+
+### Borders
+
+* Border Radius
+* Border Width
+* Border Color
+
+### Effects and Transitions
+
+* Box Shadow
+* Box Shadow Color
+* Transitions
+    * Transition Property -  `hover:`
+    * Transition Duration
+
+
+
+
 ## Useful Websites
 
 
