@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="">
+      <p class="text-lg">By default a div will take up full width of its parent container</p>
+      <div>
+        <div class="bg-red-500">01</div>
+        <div class="bg-green-500">02</div>
+        <div class="bg-blue-500">03</div>
+        <div class="bg-indigo-500">04</div>
+      </div>
+
+      <br>
+      <p class="text-lg">We are now creating a flex container, each child will only take up their necessary width</p>
+      <div class="flex flex-row">
+        <div class="bg-red-500">01</div>
+        <div class="bg-green-500">02</div>
+        <div class="bg-blue-500">03</div>
+        <div class="bg-indigo-500">000004</div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">We can set specific widths</p>
+      <div class="flex flex-row">
+        <div class="bg-red-500 w-16">01</div>
+        <div class="bg-green-500 w-16">02</div>
+        <div class="bg-blue-500">03</div>
+        <div class="bg-indigo-500 w-16">000004</div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">We can allow a specific child to grow</p>
+      <div class="flex flex-row">
+        <div class="bg-red-500 w-16">01</div>
+        <div class="bg-green-500 w-16">02</div>
+        <div class="grow bg-blue-500">03</div>
+        <div class="bg-indigo-500 w-16">000004</div>
+      </div>
+
+      
+      <br>
+      <p class="text-lg">We can allow a specific child to not grow with <code class="text-green-500">grow-none</code></p>
+      <div class="flex flex-row">
+        <div class="flex-1 bg-red-500 w-16">01</div>
+        <div class="grow-none bg-green-500 w-16">02</div>
+        <div class="flex-1 bg-blue-500">03</div>
+        <div class="flex-1 bg-indigo-500 w-16">000004</div>
+      </div>
+
+      <br>
+      <p class="text-lg">You can use <code class="text-green-500">flex-auto</code> to both shrink and grow</p>
+      <div class="flex flex-row">
+        <div class="flex-auto bg-red-500 w-16">01</div>
+        <div class="grow-none bg-green-500 w-16">02</div>
+        <div class="flex-auto bg-blue-500">03</div>
+        <div class="flex-auto bg-indigo-500 w-16">000004</div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">You can use <code class="text-green-500">gap-2</code> to add spacing between children in a flex container</p>
+      <div class="flex flex-row gap-2">
+        <div class="flex-auto bg-red-500 w-16">01</div>
+        <div class="grow-none bg-green-500 w-16">02</div>
+        <div class="flex-auto bg-blue-500">03</div>
+        <div class="flex-auto bg-indigo-500 w-16">000004</div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">Flex will wrap to the next column if there is not enough room</p>
+      <div class="flex flex-row flex-wrap gap-2">
+        <div class="flex-shrink-0 flex-grow bg-red-500 w-32">01</div>
+        <div class="flex-shrink-0 flex-grow bg-green-500 w-64">02</div>
+        <div class="flex-shrink-0 flex-grow bg-blue-500 w-96">03</div>
+        <div class="flex-shrink-0 flex-grow bg-indigo-500 w-96">000004</div>
+        <div class="flex-shrink-0  flex-grow bg-red-500 w-32">01</div>
+        <div class="flex-shrink-0 flex-grow bg-green-500 w-64">02</div>
+        <div class="flex-shrink-0 flex-grow bg-blue-500 w-96">03</div>
+        <div class="flex-shrink-0 flex-grow bg-indigo-500 w-96">000004</div>
+      </div>
+
+      <br>
+      <p class="text-lg">You can use <code class="text-green-500">flex-col</code> to flow down  (column)</p>
+      <div class="flex flex-col h-96">
+        <div class="flex-auto bg-red-500 w-full">01</div>
+        <div class="grow-none bg-green-500 w-full">02</div>
+        <div class="flex-auto bg-blue-500 w-full">03</div>
+        <div class="flex-auto bg-indigo-500 w-full">000004</div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">You can justify your flex containers</p>
+      <!-- start, end, between, around -->
+      <div class="flex flex-row justify-end"> 
+        <div class="bg-red-500 w-32">01</div>
+        <div class="bg-green-500 w-64">02</div>
+        <div class="bg-blue-500 w-96">03</div>
+      </div>
+
+      <br>
+      <p class="text-lg">You can have flex containers inside flex containers. You can use  <code class="text-green-500">justify-between</code> to space them </p>
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-row">
+          <div class="bg-red-500 w-32">01</div>
+          <div class="bg-green-500 w-64">02</div>
+          <div class="bg-blue-500 w-96">03</div>
+        </div>
+        <div class="flex flex-row">
+          <div class="bg-red-500 w-32">04</div>
+          <div class="bg-green-500 w-64">05</div>
+          <div class="bg-blue-500 w-96">06</div>
+        </div>
+      </div>
+
+
+      <br>
+      <p class="text-lg">You can align your items in your cross-axis (column-wise)</p>
+      <!-- start, end, between, around -->
+      <div class="flex flex-row items-center"> 
+        <!-- justify-center -->
+        <div class="bg-red-500 w-32 py-4">01</div>
+        <div class="bg-green-500 w-64 py-12">02</div>
+        <div class="bg-blue-500 w-96 py-4">03</div>
+      </div>
+
+
+
+
+
+    </main>
+  </body>
+</html>
