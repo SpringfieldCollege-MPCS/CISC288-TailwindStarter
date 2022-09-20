@@ -19,13 +19,7 @@ Open up the `src/index.html` file.  Click the "Go Live" button at the **bottom**
 
 ## Lesson
 
-### Typography
 
-* Font Family - `font-sans`, `font-serif`, `font-mono`
-* Font Size - `text-xs`, `text-sm`, `text-base`, `test-lg`, `text-xl`, `text-2xl`, etc.
-* Font Weight -  `font-thin`, `font-normal`, `font-semibold`, `font-bold`
-* Text Align - `text-left`, `text-center`, `text-right`
-* Text Color - `text-slate-500`
 
 ### Layout and Sizing
 
@@ -34,6 +28,14 @@ Open up the `src/index.html` file.  Click the "Go Live" button at the **bottom**
 * Sizing 
     * Width - `w-1`, `w-32`, `w-1/2`
     * Height - `h-1`, `h-32`, `h-screen`, `h-full`
+
+### Typography
+
+* Font Family - `font-sans`, `font-serif`, `font-mono`
+* Font Size - `text-xs`, `text-sm`, `text-base`, `test-lg`, `text-xl`, `text-2xl`, etc.
+* Font Weight -  `font-thin`, `font-normal`, `font-semibold`, `font-bold`
+* Text Align - `text-left`, `text-center`, `text-right`
+* Text Color - `text-slate-500`
 
 #### Flex 
 
