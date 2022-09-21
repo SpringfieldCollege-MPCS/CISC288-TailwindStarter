@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="">
+        <div class="">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+        <br>
+        <p class="text-lg">You can encase all these divs into a grid container</p>
+        <div class="grid grid-cols-3">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+
+        <br>
+        <p class="text-lg">You can add <code class="text-green-500">gap-2</code> to provide nice spacing to the items in the gird</p>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+
+        <br>
+        <p class="text-lg">You can specify <code class="text-green-500">gap-y-3</code> to provide more height spacing</p>
+        <div class="grid grid-cols-3 gap-x-2 gap-y-4">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+
+        <br>
+        <p class="text-lg">You can specify <code class="text-green-500">md:grid-cols-2</code> to add responsive design</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+
+
+        <br>
+        <p class="text-lg">You can customize specific items width with  <code class="text-green-500">col-span-2</code> to add responsive design</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4">
+            <div class="bg-red-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl h-16 col-span-2 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">03</div>
+            <div class="bg-green-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">04</div>
+            <div class="bg-teal-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">05</div>
+            <div class="bg-blue-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">06</div>
+            <div class="bg-indigo-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">07</div>
+            <div class="bg-pink-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">08</div>
+            <div class="bg-slate-500 rounded-lg shadow-xl h-16 flex flex-row items-center justify-center">09</div>
+        </div>
+
+
+        <br>
+        <p class="text-lg">You can even have row spans and column spans combined</p>
+        <div class="grid grid-rows-3 grid-flow-col gap-x-2 gap-y-4">
+            <div class="bg-red-500 rounded-lg shadow-xl min-h-[50px] row-span-3 flex flex-row items-center justify-center">01</div>
+            <div class="bg-orange-500 rounded-lg shadow-xl min-h-[50px] col-span-2 flex flex-row items-center justify-center">02</div>
+            <div class="bg-yellow-500 rounded-lg shadow-xl min-h-[50px] row-span-2 col-span-2 flex flex-row items-center justify-center">03</div>
+        </div>
+
+
+
+
+
+    </main>
+  </body>
+</html>
