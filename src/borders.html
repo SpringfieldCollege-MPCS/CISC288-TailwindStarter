@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="js/lorem.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+        <div class="flex flex-row items-center justify-between pt-10">
+            <a class="bg-indigo-600 text-center text-white w-24 rounded-lg">Start</a>
+            <a class="bg-yellow-600 text-center text-white w-24 rounded-lg">Middle</a>
+            <a class="bg-red-600 text-center text-white w-24 rounded-lg">End</a>
+        </div>
+
+        <div class="flex flex-row items-center justify-between pt-10">
+            <a class="bg-indigo-600 text-center text-white w-24 rounded-lg border-indigo-700 border-4">Start</a>
+            <a class="bg-yellow-600 text-center text-white w-24 rounded-lg border-yellow-700 border-4">Middle</a>
+            <a class="bg-red-600 text-center text-white w-24 rounded-lg border-red-700 border-4">End</a>
+        </div>
+
+        <div class="flex flex-row items-center justify-between pt-10">
+            <a class="bg-indigo-600 text-center text-white w-24 rounded-lg border-indigo-700 border-4 shadow-lg">Start</a>
+            <a class="bg-yellow-600 text-center text-white w-24 rounded-lg border-yellow-700 border-4 shadow-lg">Middle</a>
+            <a class="bg-red-600 text-center text-white w-24 rounded-lg border-red-700 border-4 shadow-lg">End</a>
+        </div>
+    </div>
+
+  </body>
+</html>

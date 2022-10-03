@@ -19,17 +19,27 @@ Open up the `src/index.html` file.  Click the "Go Live" button at the **bottom**
 
 ## Lesson
 
-
-
 ### Layout and Sizing
 
+Follow along in `basic-sizing-typography.html`.
+
 * Container - `container mx-auto`
-* Columns - `columns-2`, `columns-md`
 * Sizing 
     * Width - `w-1`, `w-32`, `w-1/2`
     * Height - `h-1`, `h-32`, `h-screen`, `h-full`
+* Margin
+    * Top - `mt-6`
+    * Bottom - `mb-6`
+    * Left - `ml-6`
+    * Right - `mr-6`
+* Padding
+    * Top - `pt-6`
+    * Bottom - `pb-6`
+    * Left - `pl-6`
+    * Right - `pr-6`
+* Columns - `columns-2`, `columns-md`
 
-### Typography
+#### Typography
 
 * Font Family - `font-sans`, `font-serif`, `font-mono`
 * Font Size - `text-xs`, `text-sm`, `text-base`, `test-lg`, `text-xl`, `text-2xl`, etc.
@@ -39,27 +49,30 @@ Open up the `src/index.html` file.  Click the "Go Live" button at the **bottom**
 
 #### Flex 
 
-
+Follow along in `flex.html`
 
 
 #### Grid
 
+Follow along in `grid.html`
 
 ### Borders
+
+Follow along on `borders.html`
 
 * Border Radius
 * Border Width
 * Border Color
-
-### Effects and Transitions
-
 * Box Shadow
 * Box Shadow Color
+
+### Handling Hover States
+
+https://tailwindcss.com/docs/hover-focus-and-other-states 
+
 * Transitions
     * Transition Property -  `hover:`
     * Transition Duration
-
-
 
 
 ## Useful Websites

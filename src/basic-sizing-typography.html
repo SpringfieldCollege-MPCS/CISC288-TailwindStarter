@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="js/lorem.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+        <div>Hello</div>
+    </div>
+    <div class="container mx-auto">
+        <div class="w-96 bg-indigo-800">1</div>
+        <div class="w-96 bg-indigo-500">2</div>
+    </div>
+
+    <div class="w-screen h-96 bg-blue-500">Yo</div>
+
+    <div class="w-1/2 bg-slate-500 h-96 mt-6 ml-2">Yo</div>
+
+    <div class="columns-2">
+        <div data-lorem="3p"></div>
+    </div>
+  </body>
+</html>
