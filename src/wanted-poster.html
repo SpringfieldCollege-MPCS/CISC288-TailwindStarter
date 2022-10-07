@@ -3,19 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface "
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="js/lorem.js"></script>
     <script>
       tailwind.config = {
         theme: {
-          extend: {},
+          extend: {
+            fontFamily: {
+              abrilfatface: ["Abril Fatface", "sans-serif"],
+            },
+          },
         },
       };
     </script>
   </head>
   <body>
-    
-
-
+    <div
+      class="mx-auto mt-11 flex w-5/12 flex-col items-center gap-y-4 bg-gray-50 p-4"
+    >
+      <h1 class="text-center text-3xl font-abrilfatface">
+        WANTED! DEAD OR ALIVE
+      </h1>
+      <img src="http://placekitten.com/200/300" />
+      <p class="px-8 text-lg">
+        <span class="text-xl font-semibold">Bill the Kitty</span> is wanted for <span class="font-semibold">armed
+          robbery</span>   and <span class="font-semibold">murder</span>! He has the following features: cute nose,
+        viscously sharp claws, heart-melting eyes. 
+      </p>
+      <div class="flex flex-row justify-between w-full px-8">
+        <span class="font-semibold text-xl">10/6/22</span>
+        <span class="font-semibold text-xl">$50,000</span>
+      </div>
+    </div>
   </body>
 </html>
